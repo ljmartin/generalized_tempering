@@ -159,9 +159,8 @@ class GSST(object):
         # Add a reporter to the simulation which will handle the updates and reports.
 
         class STReporter(object):
-            def __init__(self, st, fg):
+            def __init__(self, st):
                 self.st = st
-                self.fg = fg
 
             def describeNextReport(self, simulation):
                 st = self.st
@@ -188,7 +187,7 @@ class GSST(object):
                 if simulation.currentStep%st.reportInterval == 0:
                     st._writeReport(energies[self.st.currentLevel])
 
-        simulation.reporters.append(STReporter(self, self.forceGroup))
+        simulation.reporters.append(STReporter(self))
 
         # Write out the header line.
 
