@@ -10,6 +10,7 @@ In this dir, find two calculations of the PMF vs. separation distance for a sodi
 - A second PMF is estimated using generalized serial simulated tempering + the Wang-Landau algorithm. Observe that the weights learned closely track the free energy as estimated by MBAR:
 
 ![nacl](./na_cl_pmf/na_cl_pmf.png "NaClPMF")
+\tCaption comment
 
 # chemical_potential a.k.a. alchemical annihilation
 
