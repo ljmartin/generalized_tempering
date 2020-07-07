@@ -4,9 +4,10 @@ Generalized serial simulated tempering
 Enhanced sampling for a flexible range of non-specific collective variables / reaction coordinates / configurational parameters.
 
 # na_cl_pmf
-In this dir, find two calculations of the PMF vs. separation distance for a sodium and chloride ion pair in explicit solvent. First the PMF is generated using the (metropolized) Bennet Acceptance Ratio with the PyMBAR library. This PMF is compared to one determined by generalized serial simulated tempering + the Wang-Landau algorithm. 
+In this dir, find two calculations of the PMF vs. separation distance for a sodium and chloride ion pair in explicit solvent. 
 
-Observe that the weights learned closely track the free energy as estimated by MBAR:
+- The PMF is first generated using the (metropolized) Bennet Acceptance Ratio with the PyMBAR library. This is a typical workflow for calculating free energy across a reaction coordinate, and serves as a demonstration that generalized tempering is finding the correct free energy.
+- A second PMF is estimated using generalized serial simulated tempering + the Wang-Landau algorithm. Observe that the weights learned closely track the free energy as estimated by MBAR:
 
 ![nacl](./na_cl_pmf/na_cl_pmf.png "NaClPMF")
 
