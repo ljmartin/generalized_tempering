@@ -1,7 +1,7 @@
 # generalized_tempering
 Generalized serial simulated tempering
 
-Enhanced sampling for a flexible range of non-specific collective variables / reaction coordinates / configurational parameters.
+Enhanced sampling for a flexible range of specific or non-specific collective variables / reaction coordinates / configurational parameters.
 
 # na_cl_pmf
 In this dir, find two calculations of the PMF vs. separation distance for a sodium and chloride ion pair in explicit solvent. 
