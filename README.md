@@ -6,7 +6,7 @@ Enhanced sampling for a flexible range of specific or non-specific collective va
 # na_cl_pmf
 In this dir, find two calculations of the PMF vs. separation distance for a sodium and chloride ion pair in explicit solvent. 
 
-- The PMF is first generated using the (metropolized) Bennet Acceptance Ratio with the PyMBAR library. This is a typical workflow for calculating free energy across a reaction coordinate, and serves as a demonstration that generalized tempering is finding the correct free energy.
+- The PMF is first generated using the (metropolized) Bennet Acceptance Ratio with the PyMBAR library. This is a typical workflow for calculating free energy across a reaction coordinate, and serves as an anchor point against which we can measure the accuracy of that generalized tempering weights.
 - A second PMF is estimated using generalized serial simulated tempering + the Wang-Landau algorithm. Observe that the weights learned closely track the free energy as estimated by MBAR:
 
 ![nacl](./na_cl_pmf/na_cl_pmf.png "NaClPMF")
