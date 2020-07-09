@@ -1,0 +1,4 @@
+REMARK   1 CREATED WITH OPENMM 7.1.1, 2018-04-06
+CRYST1   24.668   24.668   24.668  90.00  90.00  90.00 P 1           1 
+HETATM    1  C   UME B   1      13.603   1.517  15.610  1.00  0.00           C
+END
