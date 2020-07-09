@@ -19,4 +19,9 @@ In this dir, find a similar comparison as above. This time, instead of separatio
 
 ![chemical_potential](./chemical_potential/chemical_potential.png "Methane chemical potential")
 
+# alanine_dipeptide_dihedral
+
+So generalized tempering can find the same free energy as MBAR. But MBAR comes with error bars, and actually takes less simulation time. So why not just use MBAR? The real point of tempering is to temper some process that will enhance sampling across a related coordinate. In this dir, find a simulation of alanine dipeptide with tempered dihedrals. The free energy across the states isn't interesting here, and the weights are only used to maintain detailed balance. 
+You can see how the slow degree of freedom is sped up by tempering the dihedral angles. 
+
 
