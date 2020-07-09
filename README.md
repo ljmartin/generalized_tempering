@@ -15,7 +15,7 @@ _Note the zero point is arbitrary, since free energies are compared using relati
 
 # chemical_potential a.k.a. alchemical annihilation
 
-In this dir, find a similar comparison as above. This time, instead of separation distance, we temper 'lambda', which in this context refers to a value that ranges [0,1] and scales the nonbonded interactions of some particle or molecule. See the readme in that directory for some more details. 
+In this dir, find a similar comparison as above. This time, instead of separation distance, we temper 'lambda', which in this context refers to a value that ranges [0,1] and scales the nonbonded interactions of some particle or molecule. See the readme in that directory for some more details. There is some noise in the middle (unclear which is inaccurate, or if the true value is in the middle) but the end-points agree nicely:
 
 ![chemical_potential](./chemical_potential/chemical_potential.png "Methane chemical potential")
 
