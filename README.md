@@ -17,6 +17,6 @@ _Note the zero point is arbitrary, since free energies are compared using relati
 
 In this dir, find a similar comparison as above. This time, instead of separation distance, we temper 'lambda', which in this context refers to a value that ranges [0,1] and scales the nonbonded interactions of some particle or molecule. See the readme in that directory for some more details. 
 
-![chemical_potential](./chemical_potential/chemical_potential.png, "Methane chemical potential")
+![chemical_potential](./chemical_potential/chemical_potential.png "Methane chemical potential")
 
 
