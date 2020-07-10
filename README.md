@@ -24,4 +24,6 @@ In this dir, find a similar comparison as above. This time, instead of separatio
 So generalized tempering can find the same free energy as MBAR. But MBAR comes with error bars, and actually takes less simulation time. So why not just use MBAR? The real point of tempering is to temper some process that will enhance sampling across a related coordinate. In this dir, find a simulation of alanine dipeptide with tempered dihedrals. The free energy across the states isn't interesting here, and the weights are only used to maintain detailed balance. 
 You can see how the slow degree of freedom is sped up by tempering the dihedral angles. 
 
+# lipid_diffusion
 
+Slow diffusion through the bilayer is a huge 'drag' on the sampling of hydrophobic ligands. While it's currently feasible to determine the binding site of a hydrophilic ligand in aqueous solvent, it doesn't seem achievable to do the same in the bilayer without coarse-graining (no one's demonstrated this, but the absence of anybody trying is a hint). In this directory, find an example of tempering nonbonded interactions of cholesterol molecules to increase diffusion. 
