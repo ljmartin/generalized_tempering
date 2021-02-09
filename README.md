@@ -10,12 +10,12 @@ The concept of tempering isn't restricted to temperature. For example, the solut
 
 This repo uses an adapted SimulatedTempering script to implement generalized, serial, simulated tempering (see notebooks below for examples). Configurational and PE-tempering are used, and calculated free energies are compared to the same estimate using the MBAR method ([doi](https://doi.org/10.1063/1.2978177)). The script uses a `scalingFactor` parameter, alternatively called lambda in the literature, to record the tempered state.
 
-The advantage over 1D umbrella sampling is for people with only a single GPU - it's convenient to set-and-forget a GSST run instead of dealing with multiple repeats followed by WHAM. Conversely, the disadvantage is that MBAR gets reasonable free energy estimates with probably less total sampling, plus it also gives error bars. ¯\_(ツ)_/¯ YMMV. 
+The advantage over 1D umbrella sampling is for people with only a single GPU - it's convenient to set-and-forget a GSST run instead of dealing with multiple repeats followed by WHAM. Conversely, the disadvantage is that MBAR gets reasonable free energy estimates with probably less total sampling, plus it also gives error bars. ¯\\_(ツ)_/¯ YMMV. 
 
 # na_cl_pmf
 In this dir, find two calculations of the PMF vs. separation distance for a sodium and chloride ion pair in explicit solvent, calculated by either PyMBAR or GSST. 
 
-The GSST weights closely track the free energy as estimated by MBAR:
+The GSST weights track the free energy as estimated by MBAR. Decreasing the GSST cutoff will increase the accuracy of the weights estimates, at the cost of more sampling. 
 
 ![nacl](./na_cl_pmf/na_cl_pmf.png "NaClPMF")
 
@@ -25,7 +25,7 @@ In this dir, find a similar comparison as above. This time, instead of separatio
 
 Again, free energies match up:
 
-![chemical_potential](./chemical_potential/chemical_potential.png "Methane chemical potential")
+![fe_of_hydration](./fe_of_hydration/fe_of_hydration.png "Methane hydration FE")
 
 # alanine_dipeptide_dihedral
 
