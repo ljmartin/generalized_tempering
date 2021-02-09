@@ -10,7 +10,7 @@ The concept of tempering isn't restricted to temperature. For example, the solut
 
 This repo uses an adapted SimulatedTempering script to implement generalized, serial, simulated tempering (see notebooks below for examples). Configurational and PE-tempering are used, and calculated free energies are compared to the same estimate using the MBAR method ([doi](https://doi.org/10.1063/1.2978177)). The script uses a `scalingFactor` parameter, alternatively called lambda in the literature, to record the tempered state.
 
-The advantage over 1D umbrella sampling is for people with only a single GPU - it's convenient to set-and-forget a GSST run instead of dealing with multiple repeats followed by WHAM. Conversely, the disadvantage is that MBAR gets reasonable free energy estimates with probably less total sampling, plus it also gives error bars. ¯\\_(ツ)_/¯ YMMV. 
+The advantage over 1D umbrella sampling is for people with only a single GPU - it's convenient to set-and-forget a GSST run instead of dealing with multiple repeats followed by WHAM. Conversely, the disadvantage is that MBAR gets reasonable free energy estimates with probably less total sampling, plus it also gives error bars. ¯\\\_(ツ)_/¯ YMMV. 
 
 # na_cl_pmf
 In this dir, find two calculations of the PMF vs. separation distance for a sodium and chloride ion pair in explicit solvent, calculated by either PyMBAR or GSST. 
